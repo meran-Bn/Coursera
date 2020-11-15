@@ -51,7 +51,7 @@ div .menu-3 h3{
 	background-color: #FFB6C1;
 }
 
-/* resposive*/
+/* resposive for desktop*/
 @media (min-width: 992px){
 #menu div{
 margin-left: auto;
@@ -64,7 +64,7 @@ margin-right: auto;
 	}
 
 }
-
+/* resposive for tablets*/
 @media (min-width: 768px) and (max-width: 991px){
 
 	#menu .menu-1,
