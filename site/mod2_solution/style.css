@@ -1,7 +1,9 @@
+
 *{
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+margin: 0;
+padding: 0;
+
 }
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -12,73 +14,68 @@ h1{
 }
 
 
-#menu div{
-position: relative;
-width: 90%;
-height: 200px;
-background-color: #A9A9A9;
-padding: 10px;
+.row{
+width: 100%;
+
+}
+
+.container{
 margin: 10px;
+border: 3px solid black;
+background-color: gray;
 margin-left: auto;
 margin-right: auto;
-border: 2px solid black;
-
-}
-div h3{
-position: absolute;
-right: 0px;
-top: 0px;
-width: 150px;
-height: 50px;
-padding: 10px;
-border: 2px solid black;
-text-align: center;
-}
-div p{
-color: #111;
+height: 200px;
 position: relative;
-top: 45px;
-padding: 10px;
 }
-div .menu-1 h3{
-	background-color: #FFD700;
+h2{
+	position: absolute;
+	width: 100px;
+	top: 0;
+	right: 0;
+	text-align: center;
 }
-div .menu-2 h3{
-	background-color: #DC143C;
-	color: #fff;
+p{
+	position: absolute;
+	top: 35px;
+	padding: 10px;
 }
-div .menu-3 h3{
-	background-color: #FFB6C1;
+.chicken{
+background-color: yellow;
 }
-
-/* resposive for desktop*/
-@media (min-width: 992px){
-#menu div{
-margin-left: auto;
-margin-right: auto;
+.beef{
+background-color: red;
 }
-	#menu div {
-		float: left;
-		width: 30%;
-		margin-left: 27px;
+.sushi{
+background-color: pink;
+}
+/*Resposive for Mobile view*/
+@media (max-width: 768px){
+	.col_sm_6{
+		float: none;
+		width: 100%;
 	}
-
 }
-/* resposive for tablets*/
+
+ /*Resposive for Tablet view */
 @media (min-width: 768px) and (max-width: 991px){
 
-	#menu .menu-1,
-#menu .menu-2{
+.col_md_4{
 float: left;
-		width: 45%;
-		margin-left: 27px;
-	
-
+width: 48%;
+margin: 1% 1%;
 	}
-	#menu .menu-3{
-		clear: left;
-		margin-left: 27px;
-		width: 93.5%;
-	}
+.col_md_5{
+	clear: left;
+	width:98%;
+}
 }
 
+/*Resposive for Desktop view */
+@media (min-width: 992px){
+.col_lg_2{
+float: right;
+width:31.33%;
+margin: 0px 1%;
+	}
+}
